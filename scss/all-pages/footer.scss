@@ -1,0 +1,165 @@
+.footer {
+  background-color: var(--gray-backgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-logo {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-link {
+  font-family: var(--second-family);
+}
+
+.footer-logo-accent {
+  color: var(--accent-color);
+}
+
+.footer-logo-text {
+  color: var(--white-color);
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.adress {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  width: 231px;
+}
+
+.footer-contacts-list {
+}
+
+.footer-contacts-item-adress {
+  line-height: 1.714285714285714;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.footer-contacts-item {
+  line-height: 1.714285714285714;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-socials {
+  margin-right: 93px;
+}
+
+.footer-socials-title {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-socials-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--animation);
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+
+.footer-svg-social {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.footer-social:hover {
+  background-color: #2196f3;
+}
+
+.footer-social:hover .footer-svg-social {
+  fill: #fff;
+}
+
+.footer-rozsylka {
+}
+
+.footer-rozsylka-text {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.footer-rozsylka-form {
+  display: flex;
+}
+
+.footer-rozsylka-input {
+  border: solid rgba(255, 255, 255, 0.3) 1px;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  padding-left: 16px;
+  display: flex;
+  margin-right: 12px;
+}
+
+.footer-rozsylka-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  border-radius: 4px;
+  background-color: #2196f3;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--animation);
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+
+.footer-rozsylka-button:hover {
+  background-color: rgba(0, 115, 207, 1);
+}
+
+.footer-rozsylka-button-svg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  color: #fff;
+}

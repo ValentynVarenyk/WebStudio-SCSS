@@ -1,0 +1,119 @@
+.gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery-choose-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.gallery-choose-button {
+  display: flex;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  color: var(--title-color);
+  background-color: var(--gray-color);
+  font-size: 16px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: var(--animation);
+  transition-property: color background-color;
+  transition-duration: 250ms;
+}
+
+.gallery-choose-button:hover {
+  display: flex;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 60px) / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item-box {
+  border: var(--border-color) 1px solid;
+}
+
+.gallery-overlay-box {
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.gallery-box-img-overlay {
+  transform: translate(0, 294px);
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  animation: galleryBoxImgOverlay 750ms;
+}
+
+@keyframes galleryBoxImgOverlay {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(0, 294px);}
+}
+
+.gallery-overlay-box:hover .gallery-box-img-overlay {
+  animation: galleryBoxImgOverlayHover 750ms;
+  transform: translate(0, 0);
+}
+
+@keyframes galleryBoxImgOverlayHover {
+  0% {transform: translate(0, 294px);}
+  100% {transform: translate(0, 0);}
+}
+
+.gallery-img-overlay-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 63px 24px;
+}
+
+.gallery-box-img {
+  width: 370px;
+  height: 294px;
+}
+
+.gallery-item-description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  gap: 4px;
+}
+
+.gallery-box-name {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gallery-box-type {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
