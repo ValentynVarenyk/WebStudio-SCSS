@@ -8,6 +8,7 @@
   justify-content: center;
   flex-direction: column;
   padding: auto;
+  transition: $animation;
   transition-property: transform, opacity;
   transition-duration: 400ms;
 }
@@ -26,7 +27,7 @@
 .title-section-modal-close {
   width: 30px;
   height: 30px;
-  border: rgba(0, 0, 0, 0.1) 1px solid;
+  border: #0000001a 1px solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -92,11 +93,11 @@
   position: absolute;
   top: 11px;
   left: 12px;
-  color: #000;
+  color: #fff;
 }
 
 .title-section-modal-input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #21212133;
   border-radius: 4px;
   width: 448px;
   height: 40px;
@@ -104,12 +105,12 @@
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #75757580;
   padding-left: 42px;
 }
 
 .title-section-modal-input2 {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #21212133;
   border-radius: 4px;
   width: 448px;
   height: 120px;
@@ -117,20 +118,20 @@
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #75757580;
   padding-left: 16px;
   margin-top: 4px;
 }
 
 .title-section-modal-input2::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  color: #75757580;
 }
 
 .title-section-modal-text {
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto";
-  color: #757575;
+  color: #75757580;
   display: flex;
   margin-bottom: 30px;
 }
@@ -138,7 +139,7 @@
 .title-section-modal-okay {
   width: 16px;
   height: 16px;
-  border: rgba(33, 33, 33, 1) solid 2px;
+  border: #212121 solid 2px;
   border-radius: 2px;
   display: flex;
   margin-right: 7px;
@@ -163,5 +164,5 @@
 }
 
 .title-modal-sumbit-button:hover {
-  background-color: rgba(24, 140, 232, 1);
+  background-color: #0073cf;
 }
