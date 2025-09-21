@@ -32,20 +32,10 @@
 }
 
 .title-section-button {
-  font-size: 16px;
-  line-height: 1.875;
   display: block;
   width: 216px;
   height: 50px;
-  background-color: #2196f3;
-  justify-content: center;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  transition: $animation;
-  transition-property: background-color;
-  transition-duration: 200ms;
+  @extend %buttons-okay;
 }
 
 .title-section-button:hover {
