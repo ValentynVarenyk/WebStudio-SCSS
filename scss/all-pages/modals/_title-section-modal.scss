@@ -93,16 +93,16 @@
 }
 
 .title-section-modal-input {
+  @extend %inputs;
   padding-left: 42px;
   height: 40px;
-  @extend %inputs;
 }
 
 .title-section-modal-input2 {
+  @extend %inputs;
   padding-left: 16px;
   margin-top: 4px;
   height: 120px;
-  @extend %inputs;
 }
 
 .title-section-modal-input2::placeholder {
