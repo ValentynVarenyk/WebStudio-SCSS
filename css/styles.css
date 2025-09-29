@@ -96,6 +96,7 @@ input[type=file] {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: red 2px solid;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -151,10 +152,12 @@ input[type=file] {
 
 .header {
   background-color: #fff;
-  width: 1600px;
+  width: 100%;
   position: fixed;
   z-index: 2;
   border: #ececec solid 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .header-container {
@@ -167,11 +170,7 @@ input[type=file] {
 .header-nav {
   gap: 93px;
   align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .header-nav {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header-nav {
@@ -267,6 +266,17 @@ input[type=file] {
 .header-contacts-list {
   display: flex;
   gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts-list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts-list {
+    display: flex;
+  }
 }
 
 .header-contacts-item {
@@ -333,7 +343,7 @@ input[type=file] {
 }
 
 .header-open-menu-svg {
-  fill: #757575;
+  fill: #212121;
   transition: cubic-bezier(0.25, 0.5, 0.75, 1);
   transition-property: color;
   transition-duration: 250ms;
@@ -798,6 +808,7 @@ input[type=file] {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  width: 100%;
   transition: cubic-bezier(0.25, 0.5, 0.75, 1);
   transition-property: color background-color;
   transition-duration: 250ms;

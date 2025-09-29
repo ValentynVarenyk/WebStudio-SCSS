@@ -4,10 +4,12 @@
 
 .header {
   background-color: #fff;
-  width: 1600px;
+  width: 100%;
   position: fixed;
   z-index: 2;
   border: #ececec solid 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .header-container {
@@ -21,9 +23,8 @@
   // display: flex;
   gap: 93px;
   align-items: center;
-  @media screen and (min-width: 480px) {
   display: none;
-}
+
   @media screen and (min-width: 768px) {
   display: flex;
 }
@@ -111,6 +112,14 @@
 .header-contacts-list {
   display: flex;
   gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+  display: flex;
+}
+  @media screen and (min-width: 1200px) {
+  display: flex;
+}
 }
 
 .header-contacts-item {
@@ -173,7 +182,7 @@
 }
 
 .header-open-menu-svg {
-  fill: #757575;
+  fill: #212121;
   transition: $animation;
   transition-property: color;
   transition-duration: 250ms;
