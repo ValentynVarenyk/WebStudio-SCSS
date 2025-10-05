@@ -1,5 +1,10 @@
 .header-secret {
-  height: 80px;
+  @media screen and (min-width: 320px){
+    height: 60px;
+  }
+  @media screen and (min-width: 768px){
+    height: 80px;
+  }
 }
 
 .header {
@@ -10,6 +15,13 @@
   border: #ececec solid 2px;
   display: flex;
   justify-content: center;
+
+@media screen and (min-width: 320px){
+    height: 60px;
+  }
+  @media screen and (min-width: 768px){
+    height: 80px;
+  }
 }
 
 .header-container {
@@ -110,15 +122,17 @@
 }
 
 .header-contacts-list {
-  display: flex;
-  gap: 50px;
   display: none;
 
   @media screen and (min-width: 768px) {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
   @media screen and (min-width: 1200px) {
   display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 }
 
@@ -170,22 +184,27 @@
 }
 
 .header-open-menu-button {
-   @media screen and (min-width: 480px) {
+  width: 40px;
+  height: 40px;
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
   display: none;
 }
   @media screen and (min-width: 1200px) {
   display: none;
-}
+} 
 }
 
 .header-open-menu-svg {
   fill: #212121;
   transition: $animation;
-  transition-property: color;
+  transition-property: fill;
   transition-duration: 250ms;
+  width: 24px;
+  height: 16px;
 }
 
 .header-open-menu-button:hover .header-open-menu-svg {
