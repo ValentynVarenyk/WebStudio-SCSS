@@ -26,10 +26,11 @@
 }
   @media screen and (min-width: 768px) {
   gap: 21px;
-  max-width: 570px;
+  max-width: 738px;
 }
   @media screen and (min-width: 1200px) {
   gap: 30px;
+  max-width: 100%;
 }
 }
 
@@ -48,7 +49,7 @@
   height: 76px;
 }
   @media screen and (min-width: 768px) {
-  width: 176px;
+  width: 226px;
   height: 84px;
 }
   @media screen and (min-width: 1200px) {

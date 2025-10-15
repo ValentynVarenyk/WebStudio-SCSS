@@ -6,7 +6,6 @@
 
 .footer-container {
   display: flex;
-  
 
   @media screen and (min-width: 320px) {
     justify-content: center;
@@ -20,9 +19,11 @@
     justify-content: center;
     width: 768px;
     flex-wrap: wrap;
+    gap: 0;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    justify-content: start;
     width: 1200px;
     flex-wrap: nowrap;
   }
@@ -47,15 +48,21 @@
 }
 
 .footer-contacts {
-  margin-right: 70px;
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: 320px) {
-    justify-content: center;
+    text-align: center;
   }
   @media screen and (min-width: 768px) {
-    justify-content: start;
+    text-align: center;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -63,21 +70,30 @@
   display: flex;
   gap: 9px;
   flex-direction: column;
-  width: 231px;
+  width: 100%;
 }
 
 .footer-contacts-list {
   display: flex;
   flex-direction: column;
-
+  
   @media screen and (min-width: 320px) {
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
   }
-  @media screen and (min-width: 320px) {
-    justify-content: center;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
   }
-  @media screen and (min-width: 320px) {
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -85,6 +101,25 @@
   line-height: 1.714285714285714;
   font-weight: 400;
   color: #fff;
+  display: flex;
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .footer-contacts-item {
@@ -93,23 +128,62 @@
   color: #ffffff99;
   margin-top: 9px;
   display: flex;
+  width: 231px;
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .footer-contacts-link {
   color: #ffffff99;
   display: flex;
+  width: 232px;
+
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .footer-socials {
-  margin-right: 93px;
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: 320px) {
-    justify-content: center;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
-    justify-content: start;
+    align-items: start;
+    margin-right: 93px;
   }
 }
 
@@ -121,7 +195,6 @@
   color: #fff;
   margin-bottom: 20px;
   text-transform: uppercase;
-  justify-content: center;
 }
 
 .footer-socials-list {
@@ -159,10 +232,16 @@
 
 .footer-rozsylka {
   display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 320px) {
     align-items: center;
-    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: start;
   }
 }
 
@@ -178,7 +257,6 @@
 
 .footer-rozsylka-form {
   display: flex;
-  
 
   @media screen and (min-width: 320px) {
     align-items: center;
@@ -219,7 +297,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
-    width: 100%;
+    width: 358px;
   }
 }
 
