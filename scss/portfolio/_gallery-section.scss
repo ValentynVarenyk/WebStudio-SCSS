@@ -1,6 +1,7 @@
 .gallery {
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 
   @media screen and (min-width: 480px) {
     padding-top: 60px;
@@ -18,7 +19,6 @@
 
 .gallery-choose-list {
   display: flex;
-  
   gap: 8px;
   justify-content: center;
   
@@ -32,11 +32,15 @@
     margin-bottom: 30px;
     flex-wrap: nowrap;
     width: 575px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     flex-wrap: nowrap;
     width: 575px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -108,15 +112,34 @@
   height: 294px;
   position: absolute;
   overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .gallery-box-img-overlay {
   transform: translate(0, 294px);
   background-color: #2196f3e6;
-  width: 370px;
   height: 294px;
   position: absolute;
   animation: galleryBoxImgOverlay 750ms;
+
+@media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 @keyframes galleryBoxImgOverlay {

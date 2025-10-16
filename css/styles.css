@@ -1218,6 +1218,7 @@ input[type=file] {
 .gallery {
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .gallery {
@@ -1255,6 +1256,8 @@ input[type=file] {
     margin-bottom: 30px;
     flex-wrap: nowrap;
     width: 575px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1262,6 +1265,8 @@ input[type=file] {
     margin-bottom: 50px;
     flex-wrap: nowrap;
     width: 575px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1344,14 +1349,43 @@ input[type=file] {
   position: absolute;
   overflow: hidden;
 }
+@media screen and (min-width: 480px) {
+  .gallery-overlay-box {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-overlay-box {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-overlay-box {
+    width: 370px;
+  }
+}
 
 .gallery-box-img-overlay {
   transform: translate(0, 294px);
   background-color: rgba(33, 150, 243, 0.9019607843);
-  width: 370px;
   height: 294px;
   position: absolute;
   animation: galleryBoxImgOverlay 750ms;
+}
+@media screen and (min-width: 480px) {
+  .gallery-box-img-overlay {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-box-img-overlay {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-box-img-overlay {
+    width: 370px;
+  }
 }
 
 @keyframes galleryBoxImgOverlay {
