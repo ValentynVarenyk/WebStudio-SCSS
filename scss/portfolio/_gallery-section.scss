@@ -1,13 +1,43 @@
 .gallery {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .gallery-choose-list {
   display: flex;
+  
   gap: 8px;
   justify-content: center;
-  margin-bottom: 50px;
+  
+  
+@media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    width: 326px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    width: 575px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    width: 575px;
+  }
 }
 
 .gallery-choose-button {
@@ -42,12 +72,31 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+
+@media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .gallery-item {
-  flex-basis: calc((100% - 60px) / 3);
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .gallery-item-box {
@@ -71,8 +120,12 @@
 }
 
 @keyframes galleryBoxImgOverlay {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(0, 294px);}
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 294px);
+  }
 }
 
 .gallery-overlay-box:hover .gallery-box-img-overlay {
@@ -81,8 +134,12 @@
 }
 
 @keyframes galleryBoxImgOverlayHover {
-  0% {transform: translate(0, 294px);}
-  100% {transform: translate(0, 0);}
+  0% {
+    transform: translate(0, 294px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .gallery-img-overlay-text {
@@ -96,8 +153,18 @@
 }
 
 .gallery-box-img {
-  width: 370px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
   height: 294px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  height: 294px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  height: 294px;
+  }
 }
 
 .gallery-item-description {
