@@ -1753,6 +1753,21 @@ input[type=file] {
   font-size: 40px;
   font-weight: 500;
   color: #000;
+  transition: cubic-bezier(0.25, 0.5, 0.75, 1);
+  transition-property: color;
+  transition-duration: 200ms;
+}
+
+.mobile-menu-nav-link:hover {
+  color: #2196f3;
+}
+
+.mobile-menu-nav-link:hover .mobile-menu-current-link {
+  color: #000;
+}
+
+.mobile-menu-current-link {
+  color: #2196f3;
 }
 
 .mobile-menu-contacts-list {
@@ -1761,14 +1776,27 @@ input[type=file] {
   gap: 32px;
   margin-left: 40px;
   margin-bottom: 64px;
+  height: 114px;
+}
+
+.mobile-menu-contacts-item {
+  height: 57px;
 }
 
 .mobile-menu-contacts-link {
-  font-size: 34px;
+  font-size: 24px;
   font-family: "Roboto";
   font-weight: 500;
   color: #757575;
   cursor: pointer;
+  transition: cubic-bezier(0.25, 0.5, 0.75, 1);
+  transition-property: color, font-size;
+  transition-duration: 200ms;
+}
+
+.mobile-menu-contacts-link:hover {
+  font-size: 34px;
+  color: #2196f3;
 }
 
 .mobile-menu-socials-list {
