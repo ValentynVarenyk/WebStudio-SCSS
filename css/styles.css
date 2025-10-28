@@ -109,7 +109,7 @@ input[type=file] {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -184,6 +184,21 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .header-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+  }
 }
 
 .header-nav {
@@ -750,10 +765,35 @@ input[type=file] {
 }
 
 .title-section {
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/title-bcg-img.png");
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@mobile-1x.webp");
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@mobile-2x.webp");
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@tablet-1x.webp");
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@tablet-2x.webp");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@desktop-1x.webp");
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive-images/title-section-background@desktop-2x.webp");
+  }
 }
 
 .title-container {
