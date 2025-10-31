@@ -16,21 +16,20 @@
     <header class="header">
       <div class="container header-container">
         <p class="header-logo">
-            <a href="./index.html" class="header-logo-link"
-              ><span class="header-logo-accent">Web</span
-              ><span class="header-logo-text">Studio</span></a
-            >
-          </p>
+          <a href="./index.html" class="header-logo-link"
+            ><span class="header-logo-accent">Web</span
+            ><span class="header-logo-text">Studio</span></a
+          >
+        </p>
         <nav class="header-nav">
-          
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-item-link"
-                >Студія</a
-              >
+              <a href="./index.html" class="nav-item-link">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-item-link current-link">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-item-link current-link"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav-item">
               <a href="#" class="nav-item-link">Контакти</a>
@@ -98,11 +97,34 @@
                     </p>
                   </div>
                 </div>
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/technokriak@desktop-1x.webp 1x,
+                      ./images/adaptive-images/technokriak@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/technokriak@tablet-1x.webp 1x,
+                      ./images/adaptive-images/technokriak@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/technokriak@mobile-1x.webp 1x,
+                      ./images/adaptive-images/technokriak@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/technokriak.png"
                   alt="technokriak"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Технокряк</p>
                   <p class="gallery-box-type">Веб-сайт</p>
@@ -121,11 +143,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/poster@desktop-1x.webp 1x,
+                      ./images/adaptive-images/poster@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/poster@tablet-1x.webp 1x,
+                      ./images/adaptive-images/poster@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/poster@mobile-1x.webp 1x,
+                      ./images/adaptive-images/poster@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/basketball.png"
                   alt="basketball"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">
                     Постер New Orlean vs Golden Star
@@ -146,11 +193,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/seafood@desktop-1x.webp 1x,
+                      ./images/adaptive-images/seafood@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/seafood@tablet-1x.webp 1x,
+                      ./images/adaptive-images/seafood@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/seafood@mobile-1x.webp 1x,
+                      ./images/adaptive-images/seafood@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/seafood.png"
                   alt="seafood"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Ресторан Seafood</p>
                   <p class="gallery-box-type">Додаток</p>
@@ -169,11 +241,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/prime@desktop-1x.webp 1x,
+                      ./images/adaptive-images/prime@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/prime@tablet-1x.webp 1x,
+                      ./images/adaptive-images/prime@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/prime@mobile-1x.webp 1x,
+                      ./images/adaptive-images/prime@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/prime.png"
                   alt="prime"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Проєкт Prime</p>
                   <p class="gallery-box-type">Маркетинг</p>
@@ -192,11 +289,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/boxes@desktop-1x.webp 1x,
+                      ./images/adaptive-images/boxes@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/boxes@tablet-1x.webp 1x,
+                      ./images/adaptive-images/boxes@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/boxes@mobile-1x.webp 1x,
+                      ./images/adaptive-images/boxes@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/boxes.png"
                   alt="boxes"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Проєкт Boxes</p>
                   <p class="gallery-box-type">Додаток</p>
@@ -215,11 +337,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/inspiration@desktop-1x.webp 1x,
+                      ./images/adaptive-images/inspiration@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/inspiration@tablet-1x.webp 1x,
+                      ./images/adaptive-images/inspiration@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/inspiration@mobile-1x.webp 1x,
+                      ./images/adaptive-images/inspiration@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/borders.png"
                   alt="borders"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Inspiration has no Borders</p>
                   <p class="gallery-box-type">Веб-сайт</p>
@@ -238,11 +385,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/vydannia@desktop-1x.webp 1x,
+                      ./images/adaptive-images/vydannia@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/vydannia@tablet-1x.webp 1x,
+                      ./images/adaptive-images/vydannia@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/vydannia@mobile-1x.webp 1x,
+                      ./images/adaptive-images/vydannia@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/lim-edit.png"
                   alt="lim-edit"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Видання Limited Edition</p>
                   <p class="gallery-box-type">Дизайн</p>
@@ -261,7 +433,32 @@
                     </p>
                   </div>
                 </div>
-                <img class="gallery-box-img" src="./images/lab.png" alt="lab" />
+                
+                
+                <picture>
+                  <source
+                  srcset="
+                  ./images/adaptive-images/lab@desktop-1x.webp 1x,
+                  ./images/adaptive-images/lab@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/adaptive-images/lab@tablet-1x.webp 1x,
+                  ./images/adaptive-images/lab@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/adaptive-images/lab@mobile-1x.webp 1x,
+                  ./images/adaptive-images/lab@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  />
+                  <img class="gallery-box-img" src="./images/lab.png" alt="lab" />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Проєкт LAB</p>
                   <p class="gallery-box-type">Маркетинг</p>
@@ -280,11 +477,36 @@
                     </p>
                   </div>
                 </div>
-                <img
+                
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/adaptive-images/buisness@desktop-1x.webp 1x,
+                      ./images/adaptive-images/buisness@desktop-2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/buisness@tablet-1x.webp 1x,
+                      ./images/adaptive-images/buisness@tablet-2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/adaptive-images/buisness@mobile-1x.webp 1x,
+                      ./images/adaptive-images/buisness@mobile-2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   class="gallery-box-img"
                   src="./images/business.png"
                   alt="business"
                 />
+                </picture>
                 <div class="gallery-item-description">
                   <p class="gallery-box-name">Growing Business</p>
                   <p class="gallery-box-type">Додаток</p>
@@ -406,7 +628,11 @@
               <a href="./index.html" class="mobile-menu-nav-link">Студія</a>
             </li>
             <li class="mobile-menu-nav-item">
-              <a href="./portfolio.html" class="mobile-menu-nav-link mobile-menu-current-link">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="mobile-menu-nav-link mobile-menu-current-link"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu-nav-item">
               <a href="#" class="mobile-menu-nav-link">Контакти</a>
@@ -415,7 +641,10 @@
         </nav>
         <ul class="mobile-menu-contacts-list">
           <li class="mobile-menu-contacts-item">
-            <a href="mailto:info@devstudio.com" class="mobile-menu-contacts-link">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu-contacts-link"
+            >
               info@devstudio.com
             </a>
           </li>
@@ -427,7 +656,10 @@
         </ul>
         <ul class="mobile-menu-socials-list">
           <li class="mobile-menu-socials-item">
-            <a href="https://www.instagram.com/" class="mobile-menu-socials-link">
+            <a
+              href="https://www.instagram.com/"
+              class="mobile-menu-socials-link"
+            >
               <p class="mobile-menu-socials-names">Instagram</p>
             </a>
           </li>
@@ -437,7 +669,10 @@
             </a>
           </li>
           <li class="mobile-menu-socials-item">
-            <a href="https://www.facebook.com/" class="mobile-menu-socials-link">
+            <a
+              href="https://www.facebook.com/"
+              class="mobile-menu-socials-link"
+            >
               <p class="mobile-menu-socials-names">Facebook</p>
             </a>
           </li>
